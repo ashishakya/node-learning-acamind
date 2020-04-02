@@ -1,0 +1,16 @@
+./05-express-first-app/yarn.lock
+./05-express-first-app/package-lock.json
+./05-express-first-app/node_modules
+./.idea/
+./.idea/workspace.xml
+./06-handle-bar/package-lock.json
+./06-handle-bar/node_modules
+./07-get-post/node_modules
+./07-get-post/package-lock.json
+./08-validation-sessions/node_modules
+./08-validation-sessions/package-lock.json
+./09-mongo/node_modules
+./09-mongo/package-lock.json
+.idea/.gitignore
+
+
