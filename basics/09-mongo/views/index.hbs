@@ -1,0 +1,38 @@
+<h1>{{ title }} </h1>
+<p> Welcome to jade {{ title }} </p>
+<form action="/insert" method="post">
+    <input type="text" name="name">
+    <button type="submit">Submit</button>
+</form>
+<hr>
+<section>
+    <h3>Get data</h3>
+    <a href="/get-data">Load data</a>
+    <div>
+        {{# each items }}
+            <div>
+                Id: {{ this._id }}
+                Name: {{ this.name }}
+            </div>
+        {{/each}}
+    </div>
+</section>
+<hr>
+
+<section>
+    <h3>Update data</h3>
+    <form action="/update" method="post">
+        <input type="text" placeholder="id" name="id">
+        <input type="text" placeholder="name" name="name">
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<hr>
+<section>
+    <h3>Delete data</h3>
+    <form action="/delete" method="post">
+        <input type="text" placeholder="id" name="id">
+        <button type="submit">Delete</button>
+    </form>
+</section>
